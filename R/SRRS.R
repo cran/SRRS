@@ -132,7 +132,6 @@ function()
     gInt=get("cbValue1kkk",envir=tt$env)
     gCriterion=get("criterions",envir=tt$env)
     Rematr=main(gDM, gRV, gnME, gGamma, gInt, gCriterion, gXh, gYh)
-    require(tcltk)
     Result=tktoplevel()
     tkwm.title(Result,"Result")
     tclRequire("Tktable")
@@ -188,8 +187,6 @@ entered",icon="question") }
 box.",icon="question") }
   PressedQ6=function()
   { tkmessageBox(message="Choose the model selection criterion for model searching, either mAIC or AIC.",icon="question") }
-  require(tcltk2)
-  require(gregmisc)
   tt=tktoplevel()
   tkwm.title(tt,"The SRRS Method")
   Update.but=tkbutton(tt,text="Update",command=PressedUpdate)
